@@ -6,14 +6,22 @@ struct MasterView: View {
             NavigationStack {
                 List {
                     Section() {
-                        RowMaster(text: "Podcasts", imageName: "bibliotheque", icon: "chevron.right")
-                        RowMaster(text: "Enregistrés", imageName: "bibliotheque", icon: "chevron.right")
-                        RowMaster(text: "Téléchargements", imageName: "bibliotheque", icon: "chevron.right")
-                        RowMaster(text: "Derniers épisodes", imageName: "bibliotheque", icon: "chevron.right")
+                        NavigationLink(destination: DetailView()) {
+                            RowMaster(text: "Podcasts", imageName: "person.fill")
+                        }
+                        NavigationLink(destination: DetailView()) {
+                            RowMaster(text: "Enregistrés", imageName: "paperplane.fill")
+                        }
+                        NavigationLink(destination: DetailView()) {
+                            RowMaster(text: "Téléchargements", imageName: "star.fill")
+                        }
+                        NavigationLink(destination: DetailView()) {
+                            RowMaster(text: "Derniers épisodes", imageName: "gearshape.fill")
+                        }                        
                     }
                     
                 }
-                .navigationBarTitle("Bibliothèque")
+                .navigationBarTitle("Podcast")
                 .listStyle(GroupedListStyle())
                 .navigationBarItems(trailing:
                     HStack {
@@ -32,11 +40,10 @@ struct RowMaster : View{
     
     let text: String
     let imageName: String
-    let icon : String
     
     var body: some View {
         HStack(alignment: .center, spacing: 20) {
-            Image(imageName)
+            Image(systemName: imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 50, height: 50)
@@ -47,10 +54,6 @@ struct RowMaster : View{
                 .font(.title2)
             
             Spacer()
-            
-            Image(systemName: icon)
-                .foregroundColor(.gray)
-                .font(.system(size: 15))
         }
     }
 }

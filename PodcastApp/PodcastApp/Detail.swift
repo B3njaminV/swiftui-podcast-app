@@ -2,15 +2,24 @@ import SwiftUI
 
 struct DetailView: View {
     
+    @State private var isScrollable = false
+    
     var body: some View {
         NavigationStack {
-            List {
-                VStack(){
+            VStack{
+                VStack {
                     VStack(){
-                        Image("podcast")
-                            .imageScale(.large)
-                            .foregroundColor(.white)
-                            .background(.gray)
+                        HStack {
+                            Spacer()
+                            Image("podcast")
+                                .resizable()
+                                .frame(width: 200, height: 200)
+                                .aspectRatio(contentMode: .fit)
+                                .padding()
+                                .shadow(radius: 20)
+                            Spacer()
+                        }
+                        
                         Text("Nadie Sabe Nada")
                             .font(.title3)
                             .bold()
@@ -32,46 +41,55 @@ struct DetailView: View {
                                     .foregroundColor(.black)
                                 Text("Dernier épisode")
                                     .foregroundColor(.black)
+                                    .bold()
+                                    .font(.title3)
                             }
-                                
                         }
                         .padding()
-                        .background(.gray)
-                        .clipShape(Capsule())
+                        .background(.white)
+                        .cornerRadius(12)
                         .buttonStyle(zoom())
-                        .foregroundColor(.white)
+                    }
+                    
+                    VStack{
+                        List {
+                            ForEach(0..<10) { index in
+                                Episode(titre: "test", date: "13 mai", description: "Ceci est une description", temps: "14 min")
+                            }
+                        }
+                        .listStyle(GroupedListStyle())
+                        
                     }
                     
                 }
+                .listStyle(GroupedListStyle())
+                .background(Color.orange.opacity(0.1))
+                                
             }
-            .listStyle(GroupedListStyle())
             .navigationBarItems(trailing:
                 HStack {
-                    HStack{
-                        Button(action: {
-                        }) {
-                            Image(systemName: "arrow.down")
-                                .frame(width: 40, height: 40)
-                                .imageScale(.large)
-                                .foregroundColor(.white)
-                                .background(.gray)
-                                .clipShape(Circle())
-                            
-                        }
-                        Button(action: {
-                        }) {
-                            Image(systemName: "ellipsis")
-                                .frame(width: 40, height: 40)
-                                .imageScale(.large)
-                                .foregroundColor(.white)
-                                .background(.gray)
-                                .clipShape(Circle())
-                        }
+                    Button(action: {
+                    }) {
+                        Image(systemName: "arrow.down")
+                            .frame(width: 40, height: 40)
+                            .imageScale(.large)
+                            .foregroundColor(.white)
+                            .background(.gray)
+                            .clipShape(Circle())
+                        
+                    }
+                    Button(action: {
+                    }) {
+                        Image(systemName: "ellipsis")
+                            .frame(width: 40, height: 40)
+                            .imageScale(.large)
+                            .foregroundColor(.white)
+                            .background(.gray)
+                            .clipShape(Circle())
                     }
                 }
-                                
             )
-            TabBar()
+            .background(Color.orange.opacity(0.5).blendMode(.multiply))
         }
     }
 }

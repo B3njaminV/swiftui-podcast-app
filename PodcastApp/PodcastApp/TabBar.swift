@@ -6,16 +6,16 @@ struct TabBar: View {
     
     var body: some View {
         TabView(selection: $selection) {            
-            Text("")
+            MasterView()
                 .tabItem {
                     Image(systemName: "play.circle")
                     Text("Écouter")
                 }
                 .tag(0)
             
-            Text("")
+            MasterView()
                 .tabItem {
-                    Image(systemName: "magnifyingglass")
+                    Image(systemName: "square.grid.2x2.fill")
                     Text("Explorer")
                 }
                 .tag(1)
