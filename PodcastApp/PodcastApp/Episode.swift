@@ -29,6 +29,8 @@ struct Episode: View {
             PlayButtonView(temps: temps)
             
         }
+        .background(.white)
+        .padding()
     }
 }
 
@@ -63,6 +65,7 @@ struct PlayButtonView: View {
                         .foregroundColor(.gray)
                 }
             }
+            
         }
     }
 }

@@ -6,9 +6,8 @@ struct DetailView: View {
     
     var body: some View {
         NavigationStack {
-            VStack{
-                VStack {
-                    VStack(){
+                ScrollView {
+                    VStack{
                         HStack {
                             Spacer()
                             Image("podcast")
@@ -52,18 +51,12 @@ struct DetailView: View {
                     }
                     
                     VStack{
-                        List {
-                            ForEach(0..<10) { index in
-                                Episode(titre: "test", date: "13 mai", description: "Ceci est une description", temps: "14 min")
-                            }
-                        }
-                        .listStyle(GroupedListStyle())
-                        
+                        Episode(titre: "test", date: "13 mai", description: "Ceci est une description", temps: "14 min")
+                        Episode(titre: "test", date: "13 mai", description: "Ceci est une description", temps: "14 min")
+                        Episode(titre: "test", date: "13 mai", description: "Ceci est une description", temps: "14 min")
                     }
-                    
-                }
-                .listStyle(GroupedListStyle())
-                .background(Color.orange.opacity(0.1))
+                    .listStyle(GroupedListStyle())
+                    .background(.white)
                                 
             }
             .navigationBarItems(trailing:
