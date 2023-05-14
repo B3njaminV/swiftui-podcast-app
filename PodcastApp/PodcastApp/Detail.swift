@@ -2,6 +2,7 @@ import SwiftUI
 
 struct DetailView: View {
     
+    let podcast: Podcast
     @State private var isScrollable = false
     
     var body: some View {
@@ -51,9 +52,9 @@ struct DetailView: View {
                     }
                     
                     VStack{
-                        Episode(titre: "test", date: "13 mai", description: "Ceci est une description", temps: "14 min")
-                        Episode(titre: "test", date: "13 mai", description: "Ceci est une description", temps: "14 min")
-                        Episode(titre: "test", date: "13 mai", description: "Ceci est une description", temps: "14 min")
+                        EpisodeView(titre: "test", date: "13 mai", description: "Ceci est une description", temps: "14 min")
+                        EpisodeView(titre: "test", date: "13 mai", description: "Ceci est une description", temps: "14 min")
+                        EpisodeView(titre: "test", date: "13 mai", description: "Ceci est une description", temps: "14 min")
                     }
                     .listStyle(GroupedListStyle())
                     .background(.white)
@@ -89,7 +90,11 @@ struct DetailView: View {
 
 struct Detail_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView()
+        let podcast = Podcast(title: "Podcast 1", author: "Auteur 1", description: "Description du podcast 1", imageURL: "image1", episodes: [
+                    Episode(title: "Épisode 1", description: "Description de l'épisode 1"),
+                    Episode(title: "Épisode 2", description: "Description de l'épisode 2")
+                ])
+        DetailView(podcast: podcast)
     }
 }
 

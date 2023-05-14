@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Episode: View {
+struct EpisodeView: View {
     
     var titre: String
     var date: String
@@ -72,6 +72,6 @@ struct PlayButtonView: View {
 
 struct Episode_Previews: PreviewProvider {
     static var previews: some View {
-        Episode(titre: "Une forme rudimentaire rudimentaire rudimentaire", date: "12 mai", description: "C'est le journal des sciences", temps: "12 mai")
+        EpisodeView(titre: "Une forme rudimentaire rudimentaire rudimentaire", date: "12 mai", description: "C'est le journal des sciences", temps: "12 mai")
     }
 }

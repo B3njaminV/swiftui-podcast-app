@@ -6,16 +6,16 @@ struct MasterView: View {
             NavigationStack {
                 List {
                     Section() {
-                        NavigationLink(destination: DetailView()) {
+                        NavigationLink(destination: BibliothequeView()) {
                             RowMaster(text: "Podcasts", imageName: "person.fill")
                         }
-                        NavigationLink(destination: DetailView()) {
+                        NavigationLink(destination: BibliothequeView()) {
                             RowMaster(text: "Enregistrés", imageName: "paperplane.fill")
                         }
-                        NavigationLink(destination: DetailView()) {
+                        NavigationLink(destination: BibliothequeView()) {
                             RowMaster(text: "Téléchargements", imageName: "star.fill")
                         }
-                        NavigationLink(destination: DetailView()) {
+                        NavigationLink(destination: BibliothequeView()) {
                             RowMaster(text: "Derniers épisodes", imageName: "gearshape.fill")
                         }                        
                     }

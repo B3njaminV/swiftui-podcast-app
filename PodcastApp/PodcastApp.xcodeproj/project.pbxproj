@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EC2534DB2A0D78F60003E1B0 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2534DA2A0D78F60003E1B0 /* Episode.swift */; };
+		EC20FF472A11982D00F181E5 /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20FF462A11982D00F181E5 /* Podcast.swift */; };
+		EC20FF492A1198A800F181E5 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20FF482A1198A800F181E5 /* Episode.swift */; };
+		EC20FF4B2A11990D00F181E5 /* Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20FF4A2A11990D00F181E5 /* Stub.swift */; };
+		EC20FF4D2A119B1B00F181E5 /* BibliothequeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20FF4C2A119B1B00F181E5 /* BibliothequeView.swift */; };
+		EC20FF4F2A119DCF00F181E5 /* PodcastResumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20FF4E2A119DCF00F181E5 /* PodcastResumeView.swift */; };
+		EC2534DB2A0D78F60003E1B0 /* EpisodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2534DA2A0D78F60003E1B0 /* EpisodeView.swift */; };
 		EC340E282A0AE29200BF3059 /* PodcastApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC340E272A0AE29200BF3059 /* PodcastApp.swift */; };
-		EC340E2A2A0AE29200BF3059 /* Master.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC340E292A0AE29200BF3059 /* Master.swift */; };
+		EC340E2A2A0AE29200BF3059 /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC340E292A0AE29200BF3059 /* MasterView.swift */; };
 		EC340E2C2A0AE29200BF3059 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC340E2B2A0AE29200BF3059 /* Assets.xcassets */; };
 		EC340E2F2A0AE29200BF3059 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC340E2E2A0AE29200BF3059 /* Preview Assets.xcassets */; };
 		EC340E392A0AE29200BF3059 /* PodcastAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC340E382A0AE29200BF3059 /* PodcastAppTests.swift */; };
@@ -37,10 +42,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EC2534DA2A0D78F60003E1B0 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		EC20FF462A11982D00F181E5 /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
+		EC20FF482A1198A800F181E5 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		EC20FF4A2A11990D00F181E5 /* Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stub.swift; sourceTree = "<group>"; };
+		EC20FF4C2A119B1B00F181E5 /* BibliothequeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibliothequeView.swift; sourceTree = "<group>"; };
+		EC20FF4E2A119DCF00F181E5 /* PodcastResumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastResumeView.swift; sourceTree = "<group>"; };
+		EC2534DA2A0D78F60003E1B0 /* EpisodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeView.swift; sourceTree = "<group>"; };
 		EC340E242A0AE29200BF3059 /* PodcastApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodcastApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC340E272A0AE29200BF3059 /* PodcastApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastApp.swift; sourceTree = "<group>"; };
-		EC340E292A0AE29200BF3059 /* Master.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Master.swift; sourceTree = "<group>"; };
+		EC340E292A0AE29200BF3059 /* MasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterView.swift; sourceTree = "<group>"; };
 		EC340E2B2A0AE29200BF3059 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC340E2E2A0AE29200BF3059 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EC340E342A0AE29200BF3059 /* PodcastAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PodcastAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +87,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC20FF452A11981A00F181E5 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				EC20FF462A11982D00F181E5 /* Podcast.swift */,
+				EC20FF482A1198A800F181E5 /* Episode.swift */,
+				EC20FF4A2A11990D00F181E5 /* Stub.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		EC340E1B2A0AE29200BF3059 = {
 			isa = PBXGroup;
 			children = (
@@ -100,11 +120,14 @@
 		EC340E262A0AE29200BF3059 /* PodcastApp */ = {
 			isa = PBXGroup;
 			children = (
+				EC20FF452A11981A00F181E5 /* model */,
 				EC340E272A0AE29200BF3059 /* PodcastApp.swift */,
-				EC340E292A0AE29200BF3059 /* Master.swift */,
+				EC340E292A0AE29200BF3059 /* MasterView.swift */,
 				ECC50A5A2A0BDB7A008A6C69 /* Detail.swift */,
 				ECA1117B2A0C32D4005FF84C /* TabBar.swift */,
-				EC2534DA2A0D78F60003E1B0 /* Episode.swift */,
+				EC2534DA2A0D78F60003E1B0 /* EpisodeView.swift */,
+				EC20FF4C2A119B1B00F181E5 /* BibliothequeView.swift */,
+				EC20FF4E2A119DCF00F181E5 /* PodcastResumeView.swift */,
 				EC340E2B2A0AE29200BF3059 /* Assets.xcassets */,
 				EC340E2D2A0AE29200BF3059 /* Preview Content */,
 			);
@@ -266,8 +289,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC340E2A2A0AE29200BF3059 /* Master.swift in Sources */,
-				EC2534DB2A0D78F60003E1B0 /* Episode.swift in Sources */,
+				EC340E2A2A0AE29200BF3059 /* MasterView.swift in Sources */,
+				EC2534DB2A0D78F60003E1B0 /* EpisodeView.swift in Sources */,
+				EC20FF4D2A119B1B00F181E5 /* BibliothequeView.swift in Sources */,
+				EC20FF492A1198A800F181E5 /* Episode.swift in Sources */,
+				EC20FF4F2A119DCF00F181E5 /* PodcastResumeView.swift in Sources */,
+				EC20FF4B2A11990D00F181E5 /* Stub.swift in Sources */,
+				EC20FF472A11982D00F181E5 /* Podcast.swift in Sources */,
 				EC340E282A0AE29200BF3059 /* PodcastApp.swift in Sources */,
 				ECA1117C2A0C32D4005FF84C /* TabBar.swift in Sources */,
 				ECC50A5B2A0BDB7A008A6C69 /* Detail.swift in Sources */,
