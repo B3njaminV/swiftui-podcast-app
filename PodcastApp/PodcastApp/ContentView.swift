@@ -1,26 +1,26 @@
 import SwiftUI
 
-struct TabBar: View {
+struct ContentView: View {
     
     @State private var selection = 2
     
     var body: some View {
         TabView(selection: $selection) {            
-            MasterView()
+            BibliothequeView()
                 .tabItem {
                     Image(systemName: "play.circle")
                     Text("Écouter")
                 }
                 .tag(0)
             
-            MasterView()
+            BibliothequeView()
                 .tabItem {
                     Image(systemName: "square.grid.2x2.fill")
                     Text("Explorer")
                 }
                 .tag(1)
             
-            MasterView()
+            BibliothequeView()
                 .tabItem {
                     Image(systemName: "books.vertical")
                     Text("Bibliothèque")
@@ -36,11 +36,19 @@ struct TabBar: View {
         }
         .navigationBarHidden(true)
         .accentColor(.blue)
+        .overlay{
+            VStack{
+                Spacer()
+                NowPlayingView()
+                    .frame(height: 178)
+            }
+            
+        }
     }
 }
 
-struct TabBar_Previews: PreviewProvider {
+struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        TabBar()
+        ContentView()
     }
 }

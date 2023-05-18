@@ -1,45 +1,30 @@
-//
-//  BibliothequeView.swift
-//  PodcastApp
-//
-//  Created by etudiant on 15/05/2023.
-//
-
 import SwiftUI
 
 struct BibliothequeView: View {
-    let podcasts: [Podcast] = podcastData
-    @State private var selectedPodcast: Podcast? = nil
-
+    
     var body: some View {
-        NavigationView {
-            VStack() {
-                ScrollView {
-                    LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 16) {
-                        ForEach(podcasts) { podcast in
-                            PodcastResumeView(podcast: podcast)
-                                .onTapGesture {
-                                    selectedPodcast = podcast
-                                }
-                        }
-                    }
+        NavigationStack {
+            ScrollView{
+                BibliothequeMenuView()
+                VStack(alignment: .leading) {
+                    Text("Mis à jour récemment")
+                        .padding()
+                        .bold()
+                        .font(.title2)
                     
-                    .padding(.horizontal, 0)
+                    BibliothequeListView()
                 }
-                
-                Spacer()
+                .padding(.top)
             }
-            .navigationTitle("Podcasts")
-            .sheet(item: $selectedPodcast) { podcast in
-                DetailView(podcast: podcast)
-            }
+            .navigationTitle("Bibliothèque")
         }
+        .accentColor(.black)
     }
 }
-
 
 struct BibliothequeView_Previews: PreviewProvider {
     static var previews: some View {
         BibliothequeView()
     }
 }
+

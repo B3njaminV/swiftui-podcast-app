@@ -24,7 +24,7 @@ struct PodcastResumeView: View {
                         .fontWeight(.bold)
                         .padding(.horizontal)
                     
-                    Text("Mise à jour :")
+                    Text("Mise à jour : il y a 2j")
                         .font(.subheadline)
                         .foregroundColor(.gray)
                         .padding(.horizontal)

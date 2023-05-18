@@ -1,10 +1,3 @@
-//
-//  Episode.swift
-//  PodcastApp
-//
-//  Created by etudiant on 11/05/2023.
-//
-
 import SwiftUI
 
 struct EpisodeView: View {
@@ -25,7 +18,7 @@ struct EpisodeView: View {
                 .fontWeight(.bold)
 
             Text(description)
-
+            
             PlayButtonView(temps: temps)
             
         }
