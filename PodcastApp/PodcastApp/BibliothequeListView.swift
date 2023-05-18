@@ -11,7 +11,7 @@ struct BibliothequeListView: View {
                     LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 16) {
                         ForEach(podcasts) { podcast in
                             NavigationLink(destination:
-                                DetailView(podcast: podcast))
+                                PodcastDetail(podcast: podcast))
                             {
                                 PodcastResumeView(podcast: podcast)
                             }
@@ -20,6 +20,7 @@ struct BibliothequeListView: View {
                     .padding(.horizontal, 0)
                 }
                 Spacer()
+                .navigationTitle("Podcasts")
             }
             .listStyle(.grouped)
         }

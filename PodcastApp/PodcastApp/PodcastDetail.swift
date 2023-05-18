@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct DetailView: View {
+struct PodcastDetail: View {
     
     let podcast: Podcast
     @State private var isScrollable = false
@@ -11,7 +11,7 @@ struct DetailView: View {
                     VStack{
                         HStack {
                             Spacer()
-                            Image("podcast")
+                            Image(podcast.imageURL)
                                 .resizable()
                                 .frame(width: 200, height: 200)
                                 .aspectRatio(contentMode: .fit)
@@ -20,16 +20,16 @@ struct DetailView: View {
                             Spacer()
                         }
                         
-                        Text("Nadie Sabe Nada")
+                        Text(podcast.title)
                             .font(.title3)
                             .bold()
                         HStack{
-                            Image("podcast")
+                            Image(podcast.imageURL)
                                 .frame(width: 40, height: 40)
                                 .imageScale(.large)
                                 .background(.gray)
                                 .clipShape(Circle())
-                            Text("SER Podcast")
+                            Text(podcast.description)
                             Image(systemName: "chevron.right")
                         }
                         Button(action: {
@@ -88,13 +88,13 @@ struct DetailView: View {
     }
 }
 
-struct Detail_Previews: PreviewProvider {
+struct PodcastDetail_Previews: PreviewProvider {
     static var previews: some View {
         let podcast = Podcast(title: "Podcast 1", author: "Auteur 1", description: "Description du podcast 1", imageURL: "image1", episodes: [
                     Episode(title: "Épisode 1", description: "Description de l'épisode 1"),
                     Episode(title: "Épisode 2", description: "Description de l'épisode 2")
                 ])
-        DetailView(podcast: podcast)
+        PodcastDetail(podcast: podcast)
     }
 }
 
