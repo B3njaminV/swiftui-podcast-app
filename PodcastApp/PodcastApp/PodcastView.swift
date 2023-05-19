@@ -98,7 +98,7 @@ struct PodcastView: View {
                     }
                 }
             }
-
+            .navigationBarTitle("", displayMode: .inline)
         }
     }
 }
