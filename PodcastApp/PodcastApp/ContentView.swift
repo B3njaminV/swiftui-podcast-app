@@ -22,7 +22,7 @@ struct ContentView: View {
             
             BibliothequeView()
                 .tabItem {
-                    Image(systemName: "books.vertical")
+                    Image(systemName: "square.stack.fill")
                     Text("Bibliothèque")
                 }
                 .tag(2)

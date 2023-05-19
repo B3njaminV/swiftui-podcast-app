@@ -24,7 +24,7 @@
 		EC467E0B2A16C5AC00DBCDF7 /* BibliothequeMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC467E0A2A16C5AC00DBCDF7 /* BibliothequeMenuItem.swift */; };
 		EC467E0D2A16C93000DBCDF7 /* BibliothequeMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC467E0C2A16C93000DBCDF7 /* BibliothequeMenuView.swift */; };
 		ECA1117C2A0C32D4005FF84C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA1117B2A0C32D4005FF84C /* ContentView.swift */; };
-		ECC50A5B2A0BDB7A008A6C69 /* PodcastDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC50A5A2A0BDB7A008A6C69 /* PodcastDetail.swift */; };
+		ECC50A5B2A0BDB7A008A6C69 /* PodcastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC50A5A2A0BDB7A008A6C69 /* PodcastView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +65,7 @@
 		EC467E0A2A16C5AC00DBCDF7 /* BibliothequeMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibliothequeMenuItem.swift; sourceTree = "<group>"; };
 		EC467E0C2A16C93000DBCDF7 /* BibliothequeMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibliothequeMenuView.swift; sourceTree = "<group>"; };
 		ECA1117B2A0C32D4005FF84C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		ECC50A5A2A0BDB7A008A6C69 /* PodcastDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastDetail.swift; sourceTree = "<group>"; };
+		ECC50A5A2A0BDB7A008A6C69 /* PodcastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,13 +128,13 @@
 			children = (
 				EC20FF452A11981A00F181E5 /* model */,
 				EC340E272A0AE29200BF3059 /* PodcastApp.swift */,
+				ECA1117B2A0C32D4005FF84C /* ContentView.swift */,
 				EC467E0C2A16C93000DBCDF7 /* BibliothequeMenuView.swift */,
 				EC467E0A2A16C5AC00DBCDF7 /* BibliothequeMenuItem.swift */,
 				EC20FF4C2A119B1B00F181E5 /* BibliothequeListView.swift */,
 				EC340E292A0AE29200BF3059 /* BibliothequeView.swift */,
 				EC2534DA2A0D78F60003E1B0 /* EpisodeView.swift */,
-				ECC50A5A2A0BDB7A008A6C69 /* PodcastDetail.swift */,
-				ECA1117B2A0C32D4005FF84C /* ContentView.swift */,
+				ECC50A5A2A0BDB7A008A6C69 /* PodcastView.swift */,
 				EC20FF4E2A119DCF00F181E5 /* PodcastResumeView.swift */,
 				EC2E18DE2A13A21700D22726 /* NowPlayingView.swift */,
 				EC340E2B2A0AE29200BF3059 /* Assets.xcassets */,
@@ -310,7 +310,7 @@
 				ECA1117C2A0C32D4005FF84C /* ContentView.swift in Sources */,
 				EC467E0B2A16C5AC00DBCDF7 /* BibliothequeMenuItem.swift in Sources */,
 				EC467E0D2A16C93000DBCDF7 /* BibliothequeMenuView.swift in Sources */,
-				ECC50A5B2A0BDB7A008A6C69 /* PodcastDetail.swift in Sources */,
+				ECC50A5B2A0BDB7A008A6C69 /* PodcastView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
