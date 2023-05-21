@@ -3,6 +3,7 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var selection = 2
+    @EnvironmentObject var theme: AppTheme
     
     var body: some View {
         TabView(selection: $selection) {            

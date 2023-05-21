@@ -24,6 +24,7 @@
 		EC467E0B2A16C5AC00DBCDF7 /* BibliothequeMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC467E0A2A16C5AC00DBCDF7 /* BibliothequeMenuItem.swift */; };
 		EC467E0D2A16C93000DBCDF7 /* BibliothequeMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC467E0C2A16C93000DBCDF7 /* BibliothequeMenuView.swift */; };
 		ECA1117C2A0C32D4005FF84C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA1117B2A0C32D4005FF84C /* ContentView.swift */; };
+		ECAC3F452A1AA4C600DC1F30 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC3F442A1AA4C600DC1F30 /* AppTheme.swift */; };
 		ECC50A5B2A0BDB7A008A6C69 /* PodcastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC50A5A2A0BDB7A008A6C69 /* PodcastView.swift */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,7 @@
 		EC467E0A2A16C5AC00DBCDF7 /* BibliothequeMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibliothequeMenuItem.swift; sourceTree = "<group>"; };
 		EC467E0C2A16C93000DBCDF7 /* BibliothequeMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibliothequeMenuView.swift; sourceTree = "<group>"; };
 		ECA1117B2A0C32D4005FF84C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ECAC3F442A1AA4C600DC1F30 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
 		ECC50A5A2A0BDB7A008A6C69 /* PodcastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,6 +101,7 @@
 				EC20FF462A11982D00F181E5 /* Podcast.swift */,
 				EC20FF482A1198A800F181E5 /* Episode.swift */,
 				EC20FF4A2A11990D00F181E5 /* Stub.swift */,
+				ECAC3F442A1AA4C600DC1F30 /* AppTheme.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -129,14 +132,7 @@
 				EC20FF452A11981A00F181E5 /* model */,
 				EC340E272A0AE29200BF3059 /* PodcastApp.swift */,
 				ECA1117B2A0C32D4005FF84C /* ContentView.swift */,
-				EC467E0C2A16C93000DBCDF7 /* BibliothequeMenuView.swift */,
-				EC467E0A2A16C5AC00DBCDF7 /* BibliothequeMenuItem.swift */,
-				EC20FF4C2A119B1B00F181E5 /* BibliothequeListView.swift */,
-				EC340E292A0AE29200BF3059 /* BibliothequeView.swift */,
-				EC2534DA2A0D78F60003E1B0 /* EpisodeView.swift */,
-				ECC50A5A2A0BDB7A008A6C69 /* PodcastView.swift */,
-				EC20FF4E2A119DCF00F181E5 /* PodcastResumeView.swift */,
-				EC2E18DE2A13A21700D22726 /* NowPlayingView.swift */,
+				ECAC3F462A1AA4F600DC1F30 /* view */,
 				EC340E2B2A0AE29200BF3059 /* Assets.xcassets */,
 				EC340E2D2A0AE29200BF3059 /* Preview Content */,
 			);
@@ -166,6 +162,21 @@
 				EC340E442A0AE29200BF3059 /* PodcastAppUITestsLaunchTests.swift */,
 			);
 			path = PodcastAppUITests;
+			sourceTree = "<group>";
+		};
+		ECAC3F462A1AA4F600DC1F30 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				EC467E0C2A16C93000DBCDF7 /* BibliothequeMenuView.swift */,
+				EC467E0A2A16C5AC00DBCDF7 /* BibliothequeMenuItem.swift */,
+				EC20FF4C2A119B1B00F181E5 /* BibliothequeListView.swift */,
+				EC340E292A0AE29200BF3059 /* BibliothequeView.swift */,
+				EC2534DA2A0D78F60003E1B0 /* EpisodeView.swift */,
+				ECC50A5A2A0BDB7A008A6C69 /* PodcastView.swift */,
+				EC20FF4E2A119DCF00F181E5 /* PodcastResumeView.swift */,
+				EC2E18DE2A13A21700D22726 /* NowPlayingView.swift */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +316,7 @@
 				EC2E18DF2A13A21700D22726 /* NowPlayingView.swift in Sources */,
 				EC20FF4F2A119DCF00F181E5 /* PodcastResumeView.swift in Sources */,
 				EC20FF4B2A11990D00F181E5 /* Stub.swift in Sources */,
+				ECAC3F452A1AA4C600DC1F30 /* AppTheme.swift in Sources */,
 				EC20FF472A11982D00F181E5 /* Podcast.swift in Sources */,
 				EC340E282A0AE29200BF3059 /* PodcastApp.swift in Sources */,
 				ECA1117C2A0C32D4005FF84C /* ContentView.swift in Sources */,
